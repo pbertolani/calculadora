@@ -12,10 +12,20 @@ function rank(victories, defeat){
 
 if (total < 10){
     level = "Ferro";
-    console.log(`O Herói tem de saldo de ${saldo} e está no nível de ${nivel}`);
+    console.log(`O Herói tem de saldo de ${total} e está no nível de ${level}`);
 }
 
 else if (10 < total && total < 21){
     level = "Bronze";
-    console.log(`O Herói tem de saldo de ${saldo} e está no nível de ${nivel}`);
+    console.log(`O Herói tem de saldo de ${total} e está no nível de ${level}`);
+}
+
+else if (20 < total && total < 51){
+    level = "Prata"
+    console.log(`O Herói tem de saldo de ${total} e está no nível de ${level}`);
+}
+
+else if (50 < total && total < 81) {
+    level = "Ouro";
+    console.log(`O Herói tem de saldo de ${total} e está no nível de ${level}`);
 }
